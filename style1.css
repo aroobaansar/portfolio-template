@@ -1,0 +1,672 @@
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+   
+}
+body{
+    color: #ededed; 
+    background: rgb(36, 38, 33);
+  }
+  header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 20px 10%;
+    background: rgb(36, 38, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+    
+}
+.logo{
+    position: relative;
+    font-size: 16px;
+   
+    text-decoration: none;
+    font-weight: 600;
+    animation: animatetab 1s ease 0.3s ;
+}
+@keyframes animatetab {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.logo h1:hover{
+cursor: pointer;
+    color: crimson;
+}
+.nav-bar a{
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: .3s;
+    background: transparent;
+   
+}
+.nav-bar a:hover{
+    color: crimson;
+    
+}
+.home{
+    position: relative;
+    width: 100%;
+   
+    justify-content: space-between;
+    height: 100vh;
+    background: url(flat-lay-workstation-with-copy-space-laptop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content{
+    max-width: 650px;  
+
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700; 
+}
+#text{
+    color:crimson;
+}
+.home-content h1{
+    font-size: 56px;
+ color: crimson;
+    font-weight: 700;
+    margin: -3px 0;
+    
+}
+.home-content p{
+    font-size: 20px;
+   
+    
+}
+.home-sco a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid  crimson;
+    border-radius: 50%;
+    font-size: 20px;
+    color:  crimson;
+    text-decoration: none;
+margin: 30px 15px 30px 0;
+
+}
+.home-sco a:hover{
+    background: crimson;
+    color: #001b29;
+}
+#text {
+    font-size: 36px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.btn-box{
+    display: inline-block;
+    padding: 12px 20px;
+    background: crimson;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #001b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: animatetab 1s ease 0.3s ;
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px crimson,
+    0 0 25px crimson, 0 0 50px crimson, 
+    0 0 100px crimson, 0 0 200px crimson;
+}
+.About{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: -15rem;
+
+}
+.about-img img{
+    margin-top: 5rem;
+    width: 10rem;
+    margin-left: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 35rem;
+    vertical-align: bottom;
+}
+.about-img img:hover{
+    box-shadow: 0 0 5px crimson,
+    0 0 25px crimson, 0 0 50px crimson, 
+    0 0 100px crimson, 0 0 200px crimson;
+}
+.about-text{
+    width: 60%;
+    padding-left: 3rem;
+    margin-bottom: 20rem;
+}
+.about-text h2{
+    font-size: 60px;
+
+}
+.about-text h2 span{
+    color: crimson;
+}
+.about-text h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+@media(max-width : 768px){
+    .about-text p{
+        font-size: 14px;
+    }
+
+}
+-------------------------------
+.service{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+   
+
+}
+
+h1{
+ 
+    text-align: center;
+    font-size: 50px;
+  
+  
+}
+ h1 span{
+    color: crimson;
+}
+.skills h1{
+    margin-top: 150px;
+ 
+}
+.service-list div{
+   
+    background-color: transparent;
+    padding: 40px;
+    display: inline-block;
+    width: 30%;
+    margin-top: 5rem;
+    margin-left: 1.7rem;
+    text-align: center;
+    height: 400px;
+
+    font-weight: 13px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px crimson;
+
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    
+}
+
+.service-list div .btn-box{
+    margin: 1.2rem;
+ 
+}
+
+
+@media (max-width: 768px){
+    .service-list div{
+        width: 90%;
+    }
+}
+.service-list div i{
+    font-size: 26px;
+    margin-bottom: 38px;
+}
+.service-list div h2{
+    font-weight: 500;
+    font-size: 27px;
+    margin-bottom: 35px;
+}
+.service-list div:hover{
+    transform: translate(-10px);
+}
+---------------------------
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px ;
+    margin-bottom: 50px;
+
+ 
+}
+
+.skill-list {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+   
+}
+.container1 .skill-list{
+ max-width: 45%;
+}
+@media (max-width: 768px){
+    .container1 .skill-list 
+{
+        max-width: 100%;
+    }
+    .container1 {
+        display: grid;
+    }
+
+}
+
+
+
+
+.bars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    transition: opacity 0.5s ease;
+}
+
+.info {
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.progress {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: crimson;
+    border-radius: 10px;
+}
+
+.technical .bars .info span{
+
+  opacity: 0;
+    
+}
+/* Animation for progress bars */
+@keyframes animateProgressBars {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Apply the animation to the .bars container when it comes into view */
+.bars .progress-bar{
+    animation: animateProgressBars 1s ease 0.3s infinite;
+}
+
+
+@media (max-width: 768px){
+    .container1 {
+        width: 90%;
+    }
+}
+.percentage-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    animation: showtext 0.5s 1.5s linear infinite;
+    opacity: 0;
+}
+
+@keyframes showtext{
+    100%{
+        opacity: 1;
+    }
+}
+.radical-bar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+ 
+}
+.radical-bar .radical{
+    width: 50%;
+ 
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 0;
+
+}
+.pro{
+    margin-top: 5px;
+}
+.radical-bar .radical svg{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radical-bar .radical .progress-bar{
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animatebar 1s linear initial;
+}
+@keyframes animatebar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: crimson;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{
+    animation: animate-path1 2s 1s linear infinite;
+}
+.path-2{
+    animation: animate-path2 2s 1s linear infinite;
+}
+.path-3{
+    animation: animate-path3 2s 1s linear infinite;
+}
+.path-4{
+    animation: animate-path4 2s 1s linear infinite;
+}
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 40;
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 150;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 280;
+    }
+}
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 190;
+    }
+}
+.radical .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showtext 2s 1s linear infinite;
+}
+.radical .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showtext 2s 1s linear infinite;
+    opacity: 0;
+
+}
+
+--------------------
+.project img{
+    
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    
+}
+.container1 .project{
+    background-color: transparent;
+    padding: 40px;
+    display: inline-block;
+    width: 30%;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    text-align: center;
+    font-weight: 13px;
+ 
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+@media (max-width: 768px){
+    .container1 .project{
+        width: 90%;
+    }
+}
+.project{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgb(0,0,0,0.1), crimson);
+    position: absolute;
+font-weight: 500;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+
+}
+.layer h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.layer p{
+    font-size: 17px;
+    line-height: 1.8;
+}
+.layer svg{
+    color: crimson;
+    margin-top: 20px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 8px;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 90%;
+   left: 25px;
+
+   bottom: 20px;
+
+   
+}
+#myForm{
+    padding:  0px 80px ;
+    }
+    
+    
+    form{
+        max-width: 100%;
+    }
+    .hidden p{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+      margin-left: 77px;
+      margin-top: 50px;
+        
+    }
+    
+     form input{
+        height:50px;
+        background-color: transparent;
+        border: 3px solid crimson; 
+        border-radius: 3px;
+        color: rgb(255, 252, 252);
+        transition: border-color 0.3s ease;
+    }
+    input:focus{
+        outline: none; /* Remove the default outline */
+        border-color: crimson; /* Set the desired border color when the input is focused */
+        box-shadow: 0 0 5px rgba(34, 32, 32, 0.8);
+    }
+    label {
+        display: flex;
+        margin-bottom: 5px;
+        color: rgba(233, 217, 217, 0.9);
+        padding: 15px 0px;
+      }
+    .form-row label{
+       display: inline-flex;
+       width: 49.79%;
+    }
+    .form-row input{
+    
+        width: 45%;
+    }
+    
+    .form-col input{
+      
+        width: 96%; /* Set the width to 100% to make it full */
+       
+    }
+    
+    #em{
+        margin-left: 51px;
+    }
+    textarea{
+        width: 96%;
+        height: 110px;
+        border:  3px solid crimson; 
+        border-radius: 3px;
+        background-color: transparent;
+        color: white;
+    }
+    textarea:focus{
+        outline: none; /* Remove the default outline */
+        border-color: rgb(153, 16, 43); /* Set the desired border color when the input is focused */
+        box-shadow: 0 0 5px rgba(34, 32, 32, 0.8);
+    }
+    form button{
+      background-color: crimson;
+      color: white;
+      padding: 20px 15px;
+      width: 97%;
+      border-radius: 3px;
+      font-size: 18px;
+      
+      border: none;
+    }
+    
+    form button:hover{
+        cursor: pointer;
+        box-shadow: 0 0 5px crimson,
+        0 0 25px crimson, 0 0 50px crimson, 
+        0 0 100px crimson, 0 0 200px crimson;
+        
+        font-weight: bold;
+      
+    }
+    .submit{
+        padding: 40px 0;
+        padding-bottom: 70px;
+    }
+    
+    @media (max-width: 768px){
+        .hidden {
+            width: 90%;
+        }
+        .hidden .form-row{
+            font-size: 10px;
+            width: 100%;
+            display: flex;
+        }
+        .hidden .form-col{
+            width: 100%;
+            padding: 0;
+            font-size: 10px;
+        }
+    }
